@@ -21,19 +21,19 @@ html {
 }
 
 .header {
-  background-color: #006157;
+  background-color: #ffde22;
 }
 
 .sidebar {
-  background-color: #005B94;
+  background-color: #ff7755;
 }
 
 .nav {
-  background-color: #642cde;
+  background-color: #00ddff;
 }
 
 .article {
-  background-color: #7E1DC3;
+  background-color: #7e1dc3;
 }
 
 .footer {
@@ -45,4 +45,42 @@ html {
   font-family: sans-serif;
   color: white;
   text-align: left;
+}
+
+.footer {
+  background-color: #393f4d;
+}
+
+/* My Solution */
+.container {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+  grid-template-columns: 228px 684px;
+  grid-template-rows: 77px 77px 622px 77px;
+  grid-template-areas:
+    "header header"
+    "sidebar nav"
+    "sidebar article"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.article {
+  grid-area: article;
+}
+
+.footer {
+  grid-area: footer;
 }
